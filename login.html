@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台登陆</title>
+</head>
+<style>
+    .login {
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="login">
+    <h1>后台登陆</h1>
+    <form action="login.php" method="post">
+    <label>账号：<input type="text" name="uname" placeholder="请输入用户名"></label><br/>
+    <label>密码：<input type="password" name="passwd" placeholder="请输入密码"></label><br/>
+    <label>验证码：<input type="text" name="code"></label><br/>
+    <label><img src="captcha.php" onclick="this.src='captcha.php?'+new Date().getTime();" ></label><br/><br/>
+    <label><input type="submit" value="登录" name="submit" style="width:80px;height:auto"></label><br/>
+    <label>没有账号？<a href="register.html" target="_blank">注册</a></label>
+    </form>
+    </div>
+</body>
+</html>

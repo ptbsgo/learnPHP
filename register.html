@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线注册</title>
+</head>
+<style>
+     .reg {
+        text-align: center;
+            }
+</style>
+<body>
+    <div class="reg">
+        <h1>注册</h1>
+        <form action="reg.php" method="post" enctype="multipart/form-data">   <!--传输文件记得要二级制传输！@-->
+        <label>账号：<input type="text" name="uname" placeholder="请输入用户名"></label><br/>
+        <label>密码：<input type="password" name="passwd1" placeholder="请输入密码"></label><br/>
+        <label>确认密码：<input type="password" name="passwd2" placeholder="请再次输入密码"></label><br/>
+        <label>手机：<input type="text" name="phone" maxlength="11" placeholder="请输入手机"></label><br/>
+        <label>头像： <input type="file" name="pic" id="file"></label><br/><br/>
+        <label><input type="submit" value="注册" name="submit" style="width:80px;height:auto"></label><br/>
+        <label>已有账号？<a href="login.html" target="_blank">登录</a></label>
+        </form>
+    </div>
+</body>
+</html>
